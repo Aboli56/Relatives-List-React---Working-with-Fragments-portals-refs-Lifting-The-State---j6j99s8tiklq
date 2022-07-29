@@ -2,11 +2,14 @@ import React, {Component, useState} from "react";
 import '../styles/App.css';
 
 class App extends Component {
+    strings =["Abcd","Efgh","Ijkl","Mnop"];
     render() {
 
         return(
             <div id="main">
-               {/* Do not remove the main div */}
+              <ol>
+            {this.strings.map((item)=><li>{item}<li/>)};
+            <ol/>
             </div>
         )
     }
